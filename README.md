@@ -1,8 +1,5 @@
 # issue-tracker
 Pure JavaScript with Bootstrap
-# Expensify 
-React App created with Andrew Mead course, contains React Router and Redux
-
 
 ## Table of contents
 * [General info](#general-info)
@@ -19,12 +16,12 @@ Pure JavaScript web application. It was a challenge to do something without any 
 
 ## Screenshots
 
-![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-2/add.jpg)
+![Example screenshot]()
 
 
-![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-2/stretch.jpg)
+![Example screenshot]()
 
-![Example screenshot](https://raw.githubusercontent.com/lapinskap/lapinskap.github.io/master/assets/img/projects/proj-2/thumb.jpg)
+![Example screenshot]()
 
 ## Technologies
 * Pure JavaScript
