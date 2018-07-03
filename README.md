@@ -32,21 +32,21 @@ There is no necessary setup, but you always can use live-server to show applicat
 Installation via yarn:
 
 ```
-$ cd ./expensify
+$ cd ./issue-tracker
 $ yarn add --global live-server
 $ live-server
 ```
 Alternatively you can use npm:
 
 ```
-$ cd ./expensify
+$ cd ./issue-tracker
 $ npm install -g live-server
 $ live-server
 ```
 
 ## Code Examples
 
-###### Simple Header component created with fat arrow function - contains React Router
+###### Pure Javascript!!! Hooraayy!!!
 
 | [file path](./src/components/Header.js)     | 
 | :---------------------------------:|
@@ -64,41 +64,17 @@ const Header = () => (
 export default Header;
 ```
 
-> With React’s stateless functional components, each component can be easily tested in isolation. No mocking, state manipulation, special libraries, or tricky test harnesses are needed.
+> Lorem ipsum sit amet
 
-###### [Reducer](https://redux.js.org/api-reference/combinereducers) example - catches "log in" and "log out" actions - contains Redux
-
-| [file path](./src/reducers/auth.js)     | 
-| :---------------------------------:|
-
-
-```javascript
-export default (state = {}, action) => {
-  switch (action.type) {
-    case 'LOGIN':
-      return {
-        uid: action.uid
-      };
-    case 'LOGOUT':
-      return {};
-    default:
-      return state;
-  }
-};
-```
 
 ## Features
 
-* React Router
-* Redux
-* Firebase
-* Jest
-* Enzyme
-* SCSS
-* Ecmascript 6
+* Pure JavaScript
+* Bootstrap (so with linked jQuery library)
+* ChanceJS - generate global unique id for each issue
 
 ## Status
 Project is: _finished_
 
 ## Inspiration
-Project based on Andrew Mead React Course which I catched on Udemy.com.
+Project inspired by my friend 
