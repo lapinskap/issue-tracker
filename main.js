@@ -13,7 +13,23 @@ function saveIssue(e) {
         severity = issueSeverity,
         assignedTo = issueAssignedTo,
         status = issueStatus
-    };
+    }
+
+    if(localStorage.getItem('issue') == null) {
+        var issues = [];
+        issues.push(issue);
+        localStorage.setItem('issues',JSON.stringify(issues)); 
+    } else {
+        var issues = JSON.parse(localStorage.getItem(issues));
+        issues.push(issue);
+        localStorage.setItem('issues',JSON.stringify(issues));
+    }
+
+    document.getElementById('issueInputForm').reset();
+
+    fetchIssues();
+
+    e.preventDefault();
 }
 
 
