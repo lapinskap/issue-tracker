@@ -17,12 +17,12 @@ pp which Pure JavaScript web application. It was a challenge to do something wit
 
 ## Screenshots
 
-![Example screenshot](./img/repair)
+![Example screenshot](https://github.com/lapinskap/issue-tracker/blob/master/img/repair.jpg)
 
 
-![Example screenshot](./img/medium)
+![Example screenshot](https://github.com/lapinskap/issue-tracker/blob/master/img/medium.jpg)
 
-![Example screenshot](./img/mobile)
+![Example screenshot](https://github.com/lapinskap/issue-tracker/blob/master/img/mobile.jpg)
 
 ## Technologies
 * Pure JavaScript
