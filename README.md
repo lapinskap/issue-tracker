@@ -17,12 +17,12 @@ pp which Pure JavaScript web application. It was a challenge to do something wit
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./img/repair)
 
 
-![Example screenshot]()
+![Example screenshot](./img/medium)
 
-![Example screenshot]()
+![Example screenshot](./img/mobile)
 
 ## Technologies
 * Pure JavaScript
@@ -49,23 +49,44 @@ $ live-server
 
 ###### Pure Javascript!!! Hooraayy!!!
 
-| [file path](./src/components/Header.js)     | 
+| [file path](./main.js)     | 
 | :---------------------------------:|
 
 ```javascript
-const Header = () => (
-    <header>
-        <h1>Expensify</h1>
-        <NavLink to="/" activeClassName="is-active" exact={true}>Dashboard Page </NavLink>
-        <NavLink to="/create" activeClassName="is-active"> Create Expense</NavLink>
-        <NavLink to="/help"  activeClassName="is-active">Help Page</NavLink>
-    </header>
-    );
+function saveIssue(e) {
+    var issueDesc = document.getElementById('issueDescInput').value;
+    var issueSeverity = document.getElementById('issueSeverityInput').value;
+    var issueAssignedTo = document.getElementById('issueAssignedToInput').value;
+    var issueId = chance.guid(); //ChanceJS built function
+    var issueStatus = 'Open';
 
-export default Header;
+    var issue = {
+        id: issueId,
+        description: issueDesc,
+        severity: issueSeverity,
+        assignedTo: issueAssignedTo,
+        status: issueStatus
+    }
+
+    if(localStorage.getItem('issue') == null) {
+        var issues = [];
+        issues.push(issue);
+        localStorage.setItem('issues',JSON.stringify(issues)); 
+    } else {
+        var issues = JSON.parse(localStorage.getItem(issues));
+        issues.push(issue);
+        localStorage.setItem('issues',JSON.stringify(issues));
+    }
+
+    document.getElementById('issueInputForm').reset();
+
+    fetchIssues();
+
+    e.preventDefault();
+}
 ```
 
-> Lorem ipsum sit amet
+> This function starts by pressing "Add" button
 
 
 ## Features
