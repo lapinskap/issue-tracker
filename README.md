@@ -12,7 +12,7 @@ Pure JavaScript with Bootstrap
 
 
 ## General info
-pp which Pure JavaScript web application. It was a challenge to do something without any framework. I decided to not implement any CSS stylesheets, just raw JavaScript and Bootstrap. In the html file I've included necessary dependencies, so you need internet connection to run application properly.
+Pure JavaScript web application. It was a challenge to do something without any framework. I decided to not implement any CSS stylesheets, just raw JavaScript and Bootstrap. In the html file I've included necessary dependencies, so you need internet connection to run application properly.
 
 
 ## Screenshots
